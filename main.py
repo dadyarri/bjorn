@@ -29,7 +29,7 @@ dp = Dispatcher(bot)
 
 
 def generate_main_menu(is_admin: bool) -> ReplyKeyboardMarkup:
-    kb = ReplyKeyboardMarkup()
+    kb = ReplyKeyboardMarkup(resize_keyboard=True)
     if is_admin:
         kb.row(
             KeyboardButton(text="Призыв"), KeyboardButton(text="Финансы"),
