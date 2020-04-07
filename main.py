@@ -20,6 +20,10 @@ from aiogram.utils.markdown import bold
 # from aiogram.utils.markdown import code
 # from aiogram.utils.markdown import pre
 
+from bot.utils import is_admin
+
+# from bot.utils import generate_mention
+
 TG_TOKEN = environ["TG_TOKEN"]
 
 logging.basicConfig(level=logging.INFO)
@@ -40,16 +44,6 @@ def generate_main_menu(is_admin: bool) -> ReplyKeyboardMarkup:
     if is_admin:
         kb.row(KeyboardButton(text="Настройки"))
     return kb
-
-
-def is_admin(_id: int) -> bool:
-
-    admins = map(int, environ["ADMINS"].split(":"))
-    return _id in admins
-
-
-def mention_user(name: str, _id: int) -> str:
-    return f"[{name}](tg://user?id={_id})"
 
 
 @dp.message_handler(commands=["start"])
