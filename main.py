@@ -20,7 +20,6 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands=["start"])
 async def send_welcome(message: types.Message):
-
     welcome_message = REPLICAS["welcome"].format(message.from_user["first_name"])
     keyboard = generate_main_menu(is_admin(message.from_user["id"]))
     await message.answer(welcome_message, reply_markup=keyboard)
