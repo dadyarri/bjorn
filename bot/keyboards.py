@@ -7,6 +7,14 @@ from aiogram.types import KeyboardButton
 
 
 def generate_main_menu(is_admin: bool) -> ReplyKeyboardMarkup:
+    """
+    Создает клавиатуру главного меню
+    Args:
+        is_admin: Статус администратора пользователя
+
+    Returns:
+        ReplyKeyboardMarkup: Объект клавиатуры, готовый к отправке
+    """
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     if is_admin:
         kb.row(
