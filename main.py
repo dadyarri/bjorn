@@ -48,6 +48,10 @@ def is_admin(_id: int) -> bool:
     return _id in admins
 
 
+def mention_user(name: str, _id: int) -> str:
+    return f"[{name}](tg://user?id={_id})"
+
+
 @dp.message_handler(commands=["start"])
 async def send_welcome(message: types.Message):
 
