@@ -6,13 +6,6 @@ from aiogram import Dispatcher
 from aiogram import executor
 from aiogram import types
 
-# from aiogram.types import ReplyKeyboardRemove
-from aiogram.types import ReplyKeyboardMarkup
-from aiogram.types import KeyboardButton
-
-# from aiogram.types import InlineKeyboardMarkup
-# from aiogram.types import InlineKeyboardButton
-
 from aiogram.utils.markdown import text
 from aiogram.utils.markdown import bold
 
@@ -24,26 +17,14 @@ from bot.utils import is_admin
 
 # from bot.utils import generate_mention
 
+from bot.keyboards import generate_main_menu
+
 TG_TOKEN = environ["TG_TOKEN"]
 
 logging.basicConfig(level=logging.INFO)
 
 bot = Bot(token=TG_TOKEN)
 dp = Dispatcher(bot)
-
-
-def generate_main_menu(is_admin: bool) -> ReplyKeyboardMarkup:
-    kb = ReplyKeyboardMarkup(resize_keyboard=True)
-    if is_admin:
-        kb.row(
-            KeyboardButton(text="Призыв"), KeyboardButton(text="Финансы"),
-        )
-    kb.row(
-        KeyboardButton(text="Расписание"), KeyboardButton(text="Рассылки"),
-    )
-    if is_admin:
-        kb.row(KeyboardButton(text="Настройки"))
-    return kb
 
 
 @dp.message_handler(commands=["start"])
