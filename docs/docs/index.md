@@ -1,17 +1,12 @@
-# Welcome to MkDocs
+# Бьорн
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+## Бот-помощник для студенческих бесед в Telegram
 
-## Commands
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+## Функционал
 
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- [Призыв](functions/call.md)
+- [Рассылки](functions/mailings.md)
+- [Финансы](functions/finances.md)
+- [Расписание](functions/schedule.md)
+- [Настройки](functions/preferences.md)

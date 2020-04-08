@@ -22,3 +22,25 @@ markdown_extensions:
       guess_lang: false
   - toc:
       permalink: true
+
+nav:
+        - Главная: index.md
+        - Функционал:
+                - Призыв: functions/call.md
+                - Рассылки: functions/mailings.md
+                - Финансы: functions/finances.md
+                - Расписание: functions/schedule.md
+                - Настройки: functions/preferences.md
+        - Разработка:
+                - Кодекс поведения: dev/code-of-conduct.md
+                - Соглашения о наименовании: dev/code-of-naming.md
+                - Соглашение о стиле кода: dev/codestyle.md
+                - Внесение вклада: dev/contributing.md
+                - Адаптация: dev/adopt.md
+        - Модули:
+                - Main: modules/main.md
+                - Bot:
+                        - Клавиатуры: modules/bot/keyboards.md
+                        - Реплики: modules/bot/replicas.md
+                        - Утилиты: modules/bot/utils.md
+                
