@@ -19,7 +19,7 @@
     
     
       
-        <title>Расписание - Bjorn</title>
+        <title>Зависимости - Bjorn</title>
       
     
     
@@ -59,6 +59,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -83,7 +88,7 @@
           </span>
           <span class="md-header-nav__topic md-ellipsis">
             
-              Расписание
+              Зависимости
             
           </span>
         </div>
@@ -193,12 +198,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Функционал
@@ -222,7 +225,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../call/" title="Призыв" class="md-nav__link">
+    <a href="../../functions/call/" title="Призыв" class="md-nav__link">
       Призыв
     </a>
   </li>
@@ -234,7 +237,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../mailings/" title="Рассылки" class="md-nav__link">
+    <a href="../../functions/mailings/" title="Рассылки" class="md-nav__link">
       Рассылки
     </a>
   </li>
@@ -246,7 +249,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../finances/" title="Финансы" class="md-nav__link">
+    <a href="../../functions/finances/" title="Финансы" class="md-nav__link">
       Финансы
     </a>
   </li>
@@ -256,18 +259,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-    
-    <a href="./" title="Расписание" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../functions/schedule/" title="Расписание" class="md-nav__link">
       Расписание
     </a>
-    
   </li>
 
         
@@ -277,7 +273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../preferences/" title="Настройки" class="md-nav__link">
+    <a href="../../functions/preferences/" title="Настройки" class="md-nav__link">
       Настройки
     </a>
   </li>
@@ -292,10 +288,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
     
     <label class="md-nav__link" for="nav-3">
       Разработка
@@ -319,7 +317,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dev/code-of-conduct/" title="Кодекс поведения" class="md-nav__link">
+    <a href="../code-of-conduct/" title="Кодекс поведения" class="md-nav__link">
       Кодекс поведения
     </a>
   </li>
@@ -331,7 +329,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dev/code-of-naming/" title="Соглашения о наименовании" class="md-nav__link">
+    <a href="../code-of-naming/" title="Соглашения о наименовании" class="md-nav__link">
       Соглашения о наименовании
     </a>
   </li>
@@ -343,7 +341,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dev/codestyle/" title="Соглашение о стиле кода" class="md-nav__link">
+    <a href="../codestyle/" title="Соглашение о стиле кода" class="md-nav__link">
       Соглашение о стиле кода
     </a>
   </li>
@@ -355,7 +353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dev/contributing/" title="Внесение вклада" class="md-nav__link">
+    <a href="../contributing/" title="Внесение вклада" class="md-nav__link">
       Внесение вклада
     </a>
   </li>
@@ -367,7 +365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../dev/adopt/" title="Адаптация" class="md-nav__link">
+    <a href="../adopt/" title="Адаптация" class="md-nav__link">
       Адаптация
     </a>
   </li>
@@ -377,11 +375,56 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../dev/requirements/" title="Зависимости" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Зависимости
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Зависимости" class="md-nav__link md-nav__link--active">
       Зависимости
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Базовые зависимости
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Зависимости для разработки
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -505,12 +548,49 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    Базовые зависимости
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    Зависимости для разработки
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/dadyarri/bjorn/edit/master/docs/functions/schedule.md" title="Редактировать страницу" class="md-content__button md-icon">
+                  <a href="https://github.com/dadyarri/bjorn/edit/master/docs/dev/requirements.md" title="Редактировать страницу" class="md-content__button md-icon">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z" /></svg>
                   </a>
                 
@@ -518,9 +598,175 @@
                   
                 
                 
-                  <h1>Расписание</h1>
+                  <h1>Зависимости</h1>
                 
-                
+                <h2 id="_1">Базовые зависимости<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<table>
+    <tr>
+        <th>Пакет</th>
+        <th>Версия</th>
+    </tr>
+
+        <tr>
+            <td>aiogram</td>
+            <td>2.7</td>
+        </tr>
+
+        <tr>
+            <td>aiohttp</td>
+            <td>3.6.2</td>
+        </tr>
+
+        <tr>
+            <td>aiohttp-socks</td>
+            <td>0.3.7</td>
+        </tr>
+
+        <tr>
+            <td>async-timeout</td>
+            <td>3.0.1</td>
+        </tr>
+
+        <tr>
+            <td>attrs</td>
+            <td>19.3.0</td>
+        </tr>
+
+        <tr>
+            <td>Babel</td>
+            <td>2.8.0</td>
+        </tr>
+
+        <tr>
+            <td>certifi</td>
+            <td>2020.4.5.1</td>
+        </tr>
+
+        <tr>
+            <td>chardet</td>
+            <td>3.0.4</td>
+        </tr>
+
+        <tr>
+            <td>idna</td>
+            <td>2.9</td>
+        </tr>
+
+        <tr>
+            <td>multidict</td>
+            <td>4.7.5</td>
+        </tr>
+
+        <tr>
+            <td>pytz</td>
+            <td>2019.3</td>
+        </tr>
+
+        <tr>
+            <td>yarl</td>
+            <td>1.4.2</td>
+        </tr>
+
+</table>
+
+<h2 id="_2">Зависимости для разработки<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<table>
+    <tr>
+        <th>Пакет</th>
+        <th>Версия</th>
+    </tr>
+
+        <tr>
+            <td>click</td>
+            <td>7.1.1</td>
+        </tr>
+
+        <tr>
+            <td>future</td>
+            <td>0.18.2</td>
+        </tr>
+
+        <tr>
+            <td>Jinja2</td>
+            <td>2.11.1</td>
+        </tr>
+
+        <tr>
+            <td>livereload</td>
+            <td>2.6.1</td>
+        </tr>
+
+        <tr>
+            <td>lunr</td>
+            <td>0.5.6</td>
+        </tr>
+
+        <tr>
+            <td>Markdown</td>
+            <td>3.2.1</td>
+        </tr>
+
+        <tr>
+            <td>MarkupSafe</td>
+            <td>1.1.1</td>
+        </tr>
+
+        <tr>
+            <td>mkdocs</td>
+            <td>1.1</td>
+        </tr>
+
+        <tr>
+            <td>mkdocs-macros-plugin</td>
+            <td>0.4.4</td>
+        </tr>
+
+        <tr>
+            <td>mkdocs-material</td>
+            <td>5.0.1</td>
+        </tr>
+
+        <tr>
+            <td>nltk</td>
+            <td>3.4.5</td>
+        </tr>
+
+        <tr>
+            <td>Pygments</td>
+            <td>2.6.1</td>
+        </tr>
+
+        <tr>
+            <td>pymdown-extensions</td>
+            <td>7.0</td>
+        </tr>
+
+        <tr>
+            <td>PyYAML</td>
+            <td>5.3.1</td>
+        </tr>
+
+        <tr>
+            <td>repackage</td>
+            <td>0.7.3</td>
+        </tr>
+
+        <tr>
+            <td>six</td>
+            <td>1.14.0</td>
+        </tr>
+
+        <tr>
+            <td>termcolor</td>
+            <td>1.1.0</td>
+        </tr>
+
+        <tr>
+            <td>tornado</td>
+            <td>6.0.4</td>
+        </tr>
+
+</table>
                 
               
               
@@ -539,7 +785,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid" aria-label="">
         
-          <a href="../finances/" title="Финансы" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../adopt/" title="Адаптация" class="md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-footer-nav__button md-icon">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
             </div>
@@ -548,19 +794,19 @@
                 <span class="md-footer-nav__direction">
                   Назад
                 </span>
-                Финансы
+                Адаптация
               </div>
             </div>
           </a>
         
         
-          <a href="../preferences/" title="Настройки" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../../modules/main/" title="Main" class="md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-footer-nav__title">
               <div class="md-ellipsis">
                 <span class="md-footer-nav__direction">
                   Вперед
                 </span>
-                Настройки
+                Main
               </div>
             </div>
             <div class="md-footer-nav__button md-icon">
