@@ -1,0 +1,24 @@
+site_name: Bjorn
+site_description: Бот Telegram для студенческих групп
+site_author: Даниил Голубев
+theme:
+        name: material
+        language: ru
+        palette:
+                primary: teal
+                accent: teal
+        font:
+                text: Roboto
+                code: Fira Code
+
+repo_name: dadyarri/bjorn
+repo_url: https://github.com/dadyarri/bjorn
+
+copyright: Copyright &copy; 2020 Даниил Голубев
+
+markdown_extensions:
+  - admonition
+  - codehilite:
+      guess_lang: false
+  - toc:
+      permalink: true
