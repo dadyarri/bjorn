@@ -10,6 +10,9 @@ theme:
         font:
                 text: Roboto
                 code: Fira Code
+        icon:
+                logo: fontawesome/solid/robot
+                repo: fontawesome/brands/github
 
 repo_name: dadyarri/bjorn
 repo_url: https://github.com/dadyarri/bjorn
@@ -23,6 +26,9 @@ markdown_extensions:
   - toc:
       permalink: true
 
+plugins:
+        - search
+        - macros
 nav:
         - Главная: index.md
         - Функционал:
@@ -37,6 +43,7 @@ nav:
                 - Соглашение о стиле кода: dev/codestyle.md
                 - Внесение вклада: dev/contributing.md
                 - Адаптация: dev/adopt.md
+                - Зависимости: dev/requirements.md
         - Модули:
                 - Main: modules/main.md
                 - Bot:
