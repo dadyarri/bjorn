@@ -1,6 +1,7 @@
 site_name: Bjorn
 site_description: Бот Telegram для студенческих групп
 site_author: Даниил Голубев
+site_url: https://github.com/dadyarri/bjorn
 theme:
     name: material
     language: ru
