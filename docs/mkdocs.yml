@@ -25,7 +25,6 @@ markdown_extensions:
         guess_lang: false
     - toc:
         permalink: true
-
 plugins:
     - search
     - macros
@@ -36,7 +35,7 @@ plugins:
                 rendering:
                     show_source: true
         watch:
-            - ..
+            - bot
 
 nav:
         - Главная: index.md
@@ -47,7 +46,7 @@ nav:
                 - Расписание: functions/schedule.md
                 - Настройки: functions/preferences.md
         - Разработка:
-                - Кодекс поведения: dev/code-of-conduct.md
+                - Кодекс поведения участника: dev/code-of-conduct.md
                 - Соглашения о наименовании: dev/code-of-naming.md
                 - Соглашение о стиле кода: dev/codestyle.md
                 - Внесение вклада: dev/contributing.md
