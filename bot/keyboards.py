@@ -13,7 +13,7 @@ def generate_main_menu(is_admin: bool) -> ReplyKeyboardMarkup:
         is_admin: Статус администратора пользователя
 
     Returns:
-        ReplyKeyboardMarkup: Объект клавиатуры, готовый к отправке
+        Объект клавиатуры, готовый к отправке
     """
     kb = ReplyKeyboardMarkup(resize_keyboard=True)
     if is_admin:
