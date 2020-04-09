@@ -72,7 +72,6 @@ nav:
                 - Адаптация: dev/adopt.md
                 - Зависимости: dev/requirements.md
         - Модули:
-                - Main: modules/main.md
                 - Bot:
                         - Клавиатуры: modules/bot/keyboards.md
                         - Реплики: modules/bot/replicas.md
