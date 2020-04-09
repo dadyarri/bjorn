@@ -23,6 +23,9 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
+<a class="md-skip" href="#_1">
+          Перейти к содержанию
+        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -224,21 +227,16 @@
         Модули
       </label>
 <ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../main/" title="Main">
-      Main
-    </a>
-</li>
 <li class="md-nav__item md-nav__item--active md-nav__item--nested">
-<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" id="nav-4-2" type="checkbox"/>
-<label class="md-nav__link" for="nav-4-2">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="nav-4-1" id="nav-4-1" type="checkbox"/>
+<label class="md-nav__link" for="nav-4-1">
       Bot
       <span class="md-nav__icon md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z"></path></svg>
 </span>
 </label>
 <nav aria-label="Bot" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="nav-4-2">
+<label class="md-nav__title" for="nav-4-1">
 <span class="md-nav__icon md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
 </span>
@@ -252,9 +250,35 @@
 </li>
 <li class="md-nav__item md-nav__item--active">
 <input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+        Реплики
+        <span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z"></path></svg>
+</span>
+</label>
 <a class="md-nav__link md-nav__link--active" href="./" title="Реплики">
       Реплики
     </a>
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
+</span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    Описание
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Пример файла
+  </a>
+</li>
+</ul>
+</nav>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="../utils/" title="Утилиты">
@@ -272,12 +296,59 @@
 </div>
 </div>
 </div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Содержание" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path></svg>
+</span>
+      Содержание
+    </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_1">
+    Описание
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_2">
+    Пример файла
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
 <div class="md-content">
 <article class="md-content__inner md-typeset">
 <a class="md-content__button md-icon" href="https://github.com/dadyarri/bjorn/edit/master/docs/modules/bot/replicas.md" title="Редактировать страницу">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71,7.04C21.1,6.65 21.1,6 20.71,5.63L18.37,3.29C18,2.9 17.35,2.9 16.96,3.29L15.12,5.12L18.87,8.87M3,17.25V21H6.75L17.81,9.93L14.06,6.18L3,17.25Z"></path></svg>
 </a>
 <h1>Реплики</h1>
+<h2 id="_1">Описание<a class="headerlink" href="#_1" title="Permanent link">¶</a></h2>
+<p>В этом файле содержатся все используемые ботом фразы. В коде не должны быть записаны реплики напрямую.<br/>
+Подстановка значений переменных выполняется через метод <code class="highlight"><span class="nb">str</span><span class="o">.</span><span class="n">format</span><span class="p">()</span></code></p>
+<h2 id="_2">Пример файла<a class="headerlink" href="#_2" title="Permanent link">¶</a></h2>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">aiogram.utils.markdown</span> <span class="kn">import</span> <span class="n">text</span>
+<span class="kn">from</span> <span class="nn">aiogram.utils.markdown</span> <span class="kn">import</span> <span class="n">bold</span>
+
+<span class="n">REPLICAS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"welcome"</span><span class="p">:</span> <span class="n">text</span><span class="p">(</span>
+        <span class="s2">"Привет "</span><span class="p">,</span>
+        <span class="n">bold</span><span class="p">(</span><span class="s2">"</span><span class="si">{0}</span><span class="s2">"</span><span class="p">),</span>
+        <span class="s2">"\! Я Бьорн, бот\-помощник для студенческих групп"</span><span class="p">,</span>
+        <span class="s2">"</span><span class="se">\n</span><span class="s2">"</span><span class="p">,</span>
+        <span class="s2">"Ты можешь получить ссылку на документацию, отправив мне команду"</span><span class="p">,</span>
+        <span class="s2">" /help"</span><span class="p">,</span>
+        <span class="n">sep</span><span class="o">=</span><span class="s2">""</span><span class="p">,</span>
+    <span class="p">),</span>
+    <span class="s2">"help"</span><span class="p">:</span> <span class="s2">"Здесь будет ссылка на документацию..."</span><span class="p">,</span>
+    <span class="s2">"idk"</span><span class="p">:</span> <span class="s2">"Я не понимаю. Отправьте /help, чтобы получить справку по боту"</span><span class="p">,</span>
+<span class="p">}</span>
+</code></pre></div>
 </article>
 </div>
 </div>
