@@ -15,7 +15,7 @@ jobs:
     - name: Checkout master
       uses: actions/checkout@v2
     - name: Updating PATH
-      run: PATH=$PATH:/home/runner/.local/bin
+      run: export PATH=$PATH:/home/runner/.local/bin
 
     - name: Installing requirements
       run: |
