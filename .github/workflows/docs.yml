@@ -14,10 +14,12 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout master
       uses: actions/checkout@v2
-      
-    - name: Deploy MKDocs
-      uses: mhausenblas/mkdocs-deploy-gh-pages@1.11
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUBTOKEN }}
 
-    
+    - name: Installing requirements
+      run: |
+        pip install -U pip --user
+        pip install -r dev_requirements.txt --user
+        pip install -r requirements.txt --user
+        export PYTHONPATH=..
+        cd docs
+        mkdocs gh-deploy
