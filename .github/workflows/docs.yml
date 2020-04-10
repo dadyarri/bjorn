@@ -14,6 +14,8 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - name: Checkout master
       uses: actions/checkout@v2
+    - name: Updating PATH
+      run: PATH=$PATH:/home/runner/.local/bin
 
     - name: Installing requirements
       run: |
