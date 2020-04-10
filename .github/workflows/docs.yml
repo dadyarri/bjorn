@@ -17,9 +17,8 @@ jobs:
 
     - name: Installing requirements
       run: |
-        pip install -U pip --user
-        pip install -r dev_requirements.txt --user
-        pip install -r requirements.txt --user
+        pip install -U pip
+        pip install -r dev_requirements.txt
         export PYTHONPATH=..
         cd docs
         mkdocs gh-deploy
