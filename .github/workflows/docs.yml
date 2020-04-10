@@ -27,4 +27,4 @@ jobs:
       run: |
         export PYTHONPATH=..
         cd docs
-        mkdocs gh-deploy
+        /home/runner/.local/bin/mkdocs gh-deploy
